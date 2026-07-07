@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { UmamiAnalytics } from '@/util/analytics';
 	import { Footer } from '@/lib/ui-shell';
 
 	import '@/styles/+global.scss';
@@ -6,8 +7,9 @@
 	let { children } = $props();
 </script>
 
+<UmamiAnalytics />
 <main>
-{@render children()}
+	{@render children()}
 </main>
 <Footer />
 
