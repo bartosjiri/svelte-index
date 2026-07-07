@@ -2,11 +2,14 @@
 	import { browser } from '$app/environment';
 	import { page } from '$app/state';
 
+	import { PageMeta } from '@/util/meta';
+
 	if (browser && page.status === 404) {
 		location.replace('/');
 	}
 </script>
 
+<PageMeta noindex nofollow />
 <section>
 	<p>
 		{#if page.status === 404}

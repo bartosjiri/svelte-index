@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PageMeta } from '@/util/meta';
 	import {
 		ListingHeader,
 		ListingHeaderItem,
@@ -7,9 +8,12 @@
 	} from '@/modules/listing-header';
 	import { CompaniesList } from '@/modules/companies';
 
+	import { META_TITLE } from '@/util/meta';
+
 	let { data } = $props();
 </script>
 
+<PageMeta fullTitle={`${META_TITLE} - List of companies using Svelte`} />
 <!-- eslint-disable svelte/no-useless-mustaches -->
 <ListingHeader>
 	<ListingHeaderItem>
