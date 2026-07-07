@@ -24,3 +24,7 @@ vite.config.ts.timestamp-*
 
 # AI
 .playwright-mcp
+
+# Generated content assets
+static/content/**
+!static/content/.gitkeep
