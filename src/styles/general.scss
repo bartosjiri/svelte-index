@@ -1,0 +1,40 @@
+:root {
+	font-size: 62.5%;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	scrollbar-gutter: stable;
+}
+
+body {
+	color: var(--color-foreground-01);
+	background-color: var(--color-background-01);
+	font-family: var(--font-family-01);
+	font-size: 1.5rem;
+	line-height: 1.25;
+	text-decoration-skip-ink: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+
+	*::selection {
+		color: #fff;
+		background-color: #0090ff;
+	}
+
+	a {
+		color: currentColor;
+		text-decoration: none;
+	}
+
+	br {
+		&::selection {
+			background-color: transparent !important;
+		}
+	}
+}

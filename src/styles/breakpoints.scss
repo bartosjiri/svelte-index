@@ -1,0 +1,9 @@
+$breakpoint-mobile: 480;
+$breakpoint-tablet: 768;
+$breakpoint-desktop: 960;
+
+@mixin breakpoint($size) {
+	@media only screen and (max-width: #{$size}px) {
+		@content;
+	}
+}
