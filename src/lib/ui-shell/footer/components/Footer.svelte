@@ -18,7 +18,7 @@
 	</div>
 	<div class:group={true} class:-pages={true}>
 		<a href="/privacy">Privacy</a>
-		<!-- <a href="/llms.txt">LLMs</a> -->
+		<a href="/llms.txt">LLMs</a>
 	</div>
 	<div class:group={true} class:-legal={true}>
 		<span>Logos are the property of their respective owners</span>
