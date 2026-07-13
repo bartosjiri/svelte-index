@@ -16,10 +16,10 @@
 			<span>A project by bartosjiri</span>
 		</a>
 	</div>
-	<!-- <div class:group={true} class:-pages={true}>
+	<div class:group={true} class:-pages={true}>
 		<a href="/privacy">Privacy</a>
-		<a href="/llms.txt">LLMs</a>
-	</div> -->
+		<!-- <a href="/llms.txt">LLMs</a> -->
+	</div>
 	<div class:group={true} class:-legal={true}>
 		<span>Logos are the property of their respective owners</span>
 	</div>
@@ -34,7 +34,7 @@
 		display: grid;
 		grid-template-columns: auto auto;
 		// grid-template-areas: 'author legal' 'pages contribute';
-		grid-template-areas: 'author legal';
+		grid-template-areas: 'author legal' 'pages empty';
 		column-gap: 1.6rem;
 		row-gap: 0.1rem;
 		font-size: 1.2rem;
