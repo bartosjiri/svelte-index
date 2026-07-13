@@ -2,7 +2,7 @@ export const META_DOMAIN = 'https://svelteindex.com';
 
 export const META_TITLE = `Svelte Index`;
 export const META_DESCRIPTION =
-	'Comapnies using Svelte. A framework loved by developers. From ambitious startups to Fortune 100.';
+	'Companies using Svelte. A framework loved by developers. From ambitious startups to Fortune 100.';
 export const META_KEYWORDS = ['svelte', 'companies using svelte'];
 
 export const META_COLOR_THEME = '#0b0b0b';
