@@ -6,6 +6,8 @@
 
 	import ChevronLeftIcon from '@/lib/primitives/icon/assets/chevron-left.svg?raw';
 
+	import { ROUTE_HOMEPAGE } from '@/lib/navigation';
+
 	const UMAMI_LSKEY = 'umami.disabled';
 
 	let isAnalyticsDisabled = $state(false);
@@ -29,7 +31,13 @@
 
 <PageMeta title="Privacy" noindex nofollow />
 <header>
-	<Button class="-homepage" href="/" variant="ghost" icon={ChevronLeftIcon} iconPosition="prefix">
+	<Button
+		class="-homepage"
+		href={ROUTE_HOMEPAGE}
+		variant="ghost"
+		icon={ChevronLeftIcon}
+		iconPosition="prefix"
+	>
 		Homepage
 	</Button>
 </header>

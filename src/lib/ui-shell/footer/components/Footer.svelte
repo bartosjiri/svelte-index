@@ -2,6 +2,8 @@
 	import { Icon } from '@/lib/primitives';
 	import BartosjiriIcon from '@/lib/primitives/icon/assets/bartosjiri.svg?raw';
 
+	import { ROUTE_PRIVACY, ROUTE_LLMS } from '@/lib/navigation';
+
 	import type { HTMLAttributes } from 'svelte/elements';
 
 	type FooterPropsT = HTMLAttributes<HTMLElement>;
@@ -17,8 +19,8 @@
 		</a>
 	</div>
 	<div class:group={true} class:-pages={true}>
-		<a href="/privacy">Privacy</a>
-		<a href="/llms.txt">LLMs</a>
+		<a href={ROUTE_PRIVACY}>Privacy</a>
+		<a href={ROUTE_LLMS}>LLMs</a>
 	</div>
 	<div class:group={true} class:-legal={true}>
 		<span>Logos are the property of their respective owners</span>
