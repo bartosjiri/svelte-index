@@ -1,42 +1,46 @@
-# sv
+<div align="center">
+  <a href="https://svelteindex.com" target="_blank"><img src="static/meta/favicon.svg" alt="Repository logo" style="height: 64px;" /></a>
+  <p><strong>Svelte Index</strong></p>
+</div>
+<hr />
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## Contributing
 
-## Creating a project
+To contribute to the directory, open an issue using one of the following templates:
 
-If you're seeing this, you've probably already done this step. Congrats!
+- [Submit a new company](https://github.com/bartosjiri/svelte-index/issues/new?template=new-company.yml)
+- [Request an update or removal](https://github.com/bartosjiri/svelte-index/issues/new?template=update-request.yml)
 
-```sh
-# create a new project
-npx sv create my-app
-```
+Svelte Index is a curated list of companies. Listings are based on subjective criteria, including company size and the impact and reach of their Svelte projects. Submissions may be rejected without explanation; however, contributors are encouraged to resubmit at a later time.
 
-To recreate this project with the same configuration:
+<hr/>
 
-```sh
-# recreate this project
-pnpm dlx sv@0.16.1 create --template minimal --types ts --add prettier eslint --install pnpm tbd
-```
+## Requirements
 
-## Developing
+- [Node.js](https://nodejs.org/) >= 20
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Development
 
-```sh
-npm run dev
+1. Install project dependencies:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   ```sh
+   pnpm i
+   ```
 
-## Building
+2. Run the application in development mode:
 
-To create a production version of your app:
+   ```sh
+   pnpm run dev
+   ```
 
-```sh
-npm run build
-```
+## Deployment
 
-You can preview the production build with `npm run preview`.
+#### Using providers with SvelteKit supports
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+1. Deploy the application using a provider of your preference with SvelteKit support.
+2. Configure the required environment variables based on the `.env.example` file.
+
+#### Self-hosting
+
+1. Configure the required environment variables based on the `.env.example` file.
+2. Follow the SvelteKit's [Node server deployment documentation](https://kit.svelte.dev/docs/adapter-node).

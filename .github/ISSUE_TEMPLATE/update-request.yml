@@ -1,0 +1,31 @@
+name: Request an update or removal
+description: Request a change to an existing listing or ask for its removal.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request content updates or ask for a listing to be removed (including legal or intellectual property claims).
+
+  - type: input
+    id: name
+    attributes:
+      label: Company name
+      description: The name of the existing listing.
+      placeholder: Acme Inc.
+
+  - type: dropdown
+    id: requestType
+    attributes:
+      label: Request type
+      description: What kind of change are you requesting?
+      options:
+        - Update information
+        - Remove listing
+        - Other
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe the requested change or the reason for removal.
+      placeholder: The company logo has changed to...

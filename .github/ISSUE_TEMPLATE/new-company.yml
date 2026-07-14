@@ -1,0 +1,39 @@
+name: Submit a new company
+description: Submit a new company to add to the directory.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a new company. Read the README to understand the submission criteria.
+
+  - type: input
+    id: name
+    attributes:
+      label: Company name
+      description: The official name of the company.
+      placeholder: Acme Inc.
+    validations:
+      required: true
+
+  - type: input
+    id: websiteUrl
+    attributes:
+      label: Website URL
+      description: The company's public website.
+      placeholder: https://example.com
+    validations:
+      required: true
+
+  - type: input
+    id: description
+    attributes:
+      label: Description
+      description: A short description of what the company does.
+      placeholder: Financial technology company
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional context
+      description: Optional information about the company's use of Svelte, impact, reach, etc.
+      placeholder: The company uses Svelte for its main customer dashboard...

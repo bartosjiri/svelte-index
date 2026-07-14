@@ -1,6 +1,7 @@
 import { loadCompaniesData } from '@/modules/companies/helpers/loadCompaniesData.server';
 
 import { META_DOMAIN, META_TITLE } from '@/util/meta';
+import { LINK_REPOSITORY } from '@/lib/navigation';
 
 import type { RequestHandler } from './$types';
 
@@ -15,10 +16,15 @@ export const GET: RequestHandler = async () => {
 		`${META_TITLE} is a curated list of companies using Svelte.`,
 		'',
 		`URL: ${META_DOMAIN}`,
+		`Repository: ${LINK_REPOSITORY}`,
 		'',
 		`## Companies using Svelte`,
 		'',
 		...companies.map((company) => `- [${company.name}](${company.websiteUrl})`),
+		'',
+		'## Contributing',
+		'',
+		`Content contributions, including new company submissions and update or removal requests, can be made through the project's GitHub repository: ${LINK_REPOSITORY}`,
 		'',
 		'## Attribution',
 		'',
