@@ -10,7 +10,7 @@
 	{#each companies as company (company.slug)}
 		<CompaniesListItem {company} />
 	{/each}
-	<!-- <CompaniesListItem empty /> -->
+	<CompaniesListItem empty />
 </ul>
 
 <style lang="scss">

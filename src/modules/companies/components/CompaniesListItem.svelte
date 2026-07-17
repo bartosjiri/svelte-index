@@ -3,6 +3,8 @@
 	import SelectionIcon from '@/lib/primitives/icon/assets/selection.svg?raw';
 	import ArrowTopRightIcon from '@/lib/primitives/icon/assets/arrow-top-right.svg?raw';
 
+	import { LINK_REPOSITORY } from '@/lib/navigation';
+
 	import type { CompanyT } from '../types/company.types';
 
 	type CompaniesListItemPropsT =
@@ -17,7 +19,7 @@
 
 <li class:-empty={empty} {...restProps}>
 	<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-	<a href={empty ? '@TODO' : company?.websiteUrl} target="_blank">
+	<a href={empty ? `${LINK_REPOSITORY}#contributing` : company?.websiteUrl} target="_blank">
 		<div class:company={true}>
 			<div class:logo={true}>
 				{#if empty}
