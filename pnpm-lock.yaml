@@ -44,6 +44,9 @@ importers:
       sass-embedded:
         specifier: ^1.100.0
         version: 1.100.0
+      super-sitemap:
+        specifier: ^2.0.5
+        version: 2.0.5
       svelte:
         specifier: ^5.56.1
         version: 5.56.4(@typescript-eslint/types@8.62.1)
@@ -1101,6 +1104,9 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  super-sitemap@2.0.5:
+    resolution: {integrity: sha512-nac5LEVTh81d1Rp57wmoEAXX7M/CTgtl51hWtN5junpKqzNpRvunAARv9kG4I3Tafru2Sc0Penc23SH9CTSOmA==}
+
   supports-color@8.1.1:
     resolution: {integrity: sha512-MpUEN2OodtUzxvKQl72cUF7RQ5EiHsGvSsVG0ia9c5RbWGL2CI4C7EpPS8UTBIplnlzZiNuV56w+FuNxy3ty2Q==}
     engines: {node: '>=10'}
@@ -2147,6 +2153,8 @@ snapshots:
       totalist: 3.0.1
 
   source-map-js@1.2.1: {}
+
+  super-sitemap@2.0.5: {}
 
   supports-color@8.1.1:
     dependencies:
