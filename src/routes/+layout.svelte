@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { UmamiAnalytics } from '@/util/analytics';
+	import { ThemeProvider } from '@/lib/ui-shell/theme';
 	import { Footer } from '@/lib/ui-shell';
 
 	import '@/styles/+global.scss';
@@ -8,6 +9,7 @@
 </script>
 
 <UmamiAnalytics />
+<ThemeProvider />
 <main>
 	{@render children()}
 </main>

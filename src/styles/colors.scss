@@ -9,3 +9,14 @@
 	--color-brand-01: #ff3e00;
 	--color-brand-02: #3f0a0a;
 }
+
+html[data-theme='light'] {
+	--color-foreground-01: #202020;
+	--color-foreground-02: #595959;
+	--color-foreground-03: #8d8d8d;
+
+	--color-background-01: #fafafa;
+	--color-background-02: #f0f0f0;
+
+	--color-brand-02: #ffe0d9;
+}
