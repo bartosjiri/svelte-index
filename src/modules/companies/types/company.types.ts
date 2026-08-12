@@ -9,4 +9,5 @@ export type CompanyConfigT = {
 	name: string;
 	description: string;
 	websiteUrl: string;
+	careersUrl?: string;
 };

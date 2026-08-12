@@ -3,5 +3,6 @@ import type { CompanyConfigT } from '../../src/modules/companies';
 export const COMPANY: CompanyConfigT = {
 	name: 'New York Times',
 	description: 'Digital news publication',
-	websiteUrl: 'https://nytimes.com'
+	websiteUrl: 'https://nytimes.com',
+	careersUrl: 'https://www.nytco.com/careers/job-listings'
 };
