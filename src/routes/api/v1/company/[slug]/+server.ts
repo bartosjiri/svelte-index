@@ -32,7 +32,7 @@ export const GET = async ({ params }) => {
 	} catch (err) {
 		if ([404].includes((err as HttpError)?.status)) throw err;
 
-		console.error('/api/v1/companies/[slug]/+server.ts - err: ', err);
+		console.error('/api/v1/company/[slug]/+server.ts - err: ', err);
 		throw error(500);
 	}
 };
